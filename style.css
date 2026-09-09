@@ -1,0 +1,454 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   LINK PARA PULAR CONTEÚDO
+========================= */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 12px 18px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background-color: #12355b;
+    color: white;
+    padding: 25px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #ffffff;
+    color: #12355b;
+    border-radius: 5px;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #12355b,
+        #087e8b
+    );
+
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #12355b;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover,
+.botao:focus {
+    background-color: #eeeeee;
+}
+
+/* =========================
+   CONTROLES
+========================= */
+
+.controles {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    background-color: #12355b;
+    color: white;
+    border: 2px solid #12355b;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: #12355b;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #12355b;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.fundo {
+    background-color: #f1f5f8;
+}
+
+/* =========================
+   LISTA
+========================= */
+
+.lista {
+    padding-left: 30px;
+}
+
+.lista li {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #f4b400;
+    border-color: #12355b;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+#mensagemFormulario {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* =========================
+   ALTO CONTRASTE
+========================= */
+
+body.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste .hero {
+    background: #000;
+    color: #fff;
+}
+
+body.alto-contraste .fundo,
+body.alto-contraste .controles {
+    background-color: #111;
+}
+
+body.alto-contraste .card {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.alto-contraste .card h3 {
+    color: #ffff00;
+}
+
+body.alto-contraste a {
+    color: #ffff00;
+}
+
+body.alto-contraste button {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+} O que é deficiência visual
+A deficiência visual é uma condição em que uma pessoa apresenta uma redução
+ importante da capacidade de enxergar, mesmo com tratamento, correção por
+  óculos ou lentes de contato.
+
+Ela pode variar bastante algumas pessoas enxergam parcialmente, enquanto outras 
+não possuem visão funcional.
+
+É importante entender que deficiência visual não significa necessariamente cegueira.
+
+Principais classificações
+Baixa visão: a pessoa possui alguma visão, mas tem dificuldade para realizar atividades
+ do dia a dia, mesmo usando correção adequada.
+Cegueira: a pessoa apresenta ausência ou perda muito significativa da visão funcional.
+Visão monocular: perda da visão em um dos olhos. Dependendo da legislação e da avaliação 
+funcional, pode ser considerada deficiência.
+🔎 Quais são as causas?
+A deficiência visual pode surgir desde o nascimento ou ao longo da vida.
+
+Algumas causas incluem:
+
+Alterações genéticas ou congênitas.
+Doenças da retina.
+Glaucoma.
+Catarata.
+Retinopatia diabética.
+Degeneração macular.
+Traumas ou acidentes.
+Infecções e outras doenças que afetam os olhos ou o sistema nervoso.
+A causa e o grau da deficiência determinam quanto a pessoa consegue enxergar
+ e quais recursos podem ajudá-la.
+
+🧑‍🦯 Como é a vida de uma pessoa com deficiência visual?
+Depende muito do grau de visão e das condições da pessoa. Uma pessoa com 
+deficiência visual pode estudar, trabalhar, praticar esportes, viajar, usar celular
+ e computador, morar sozinha e realizar inúmeras atividades.
+
+O que muitas vezes dificulta sua participação não é apenas a deficiência em 
+si, mas também a falta de acessibilidade.
+
+Por exemplo:
+
+Calçadas sem orientação adequada.
+Falta de sinalização tátil.
+Sites e aplicativos incompatíveis com leitores de tela.
+Materiais escolares sem versões acessíveis.
+Falta de audiodescrição.
+Preconceito e falta de informação.
+🦯 Tecnologias e recursos de acessibilidade
+Existem muitos recursos que aumentam a autonomia:
+
+Bengala branca, utilizada para orientação e mobilidade.
+Cão-guia.
+Braille, sistema de leitura e escrita por pontos em relevo.
+Leitores de tela, que transformam textos e informações da tela em voz.
+Ampliadores de tela.
+Lupas e dispositivos ópticos.
+Audiodescrição.
+Materiais em formatos acessíveis.
+Aplicativos de reconhecimento de objetos, textos e ambientes.
+🏫 Deficiência visual na escola
+Uma pessoa com deficiência visual pode estudar normalmente, mas pode precisar de adaptações.
+
+Alguns exemplos:
+
+Livros em Braille ou formato digital acessível.
+Textos ampliados para pessoas com baixa visão.
+Leitor de tela.
+Provas adaptadas.
+Descrição verbal de imagens, gráficos e mapas.
+Materiais táteis.
+Mais tempo para determinadas atividades, quando necessário.
+O objetivo da inclusão não é diminuir o conteúdo que o aluno aprende, mas garantir 
+que ele consiga acessar o conteúdo.
+
+💼 E no trabalho?
+Pessoas com deficiência visual podem exercer diversas profissões. Dependendo
+ da atividade, podem utilizar tecnologias assistivas e adaptações no ambiente.
+
+Por exemplo, uma pessoa pode utilizar:
+
+Computador com leitor de tela.
+Teclado adaptado.
+Ampliadores.
+Documentos digitais acessíveis.
+Equipamentos e sinalizações adaptadas.
+No Brasil, existem também políticas de inclusão profissional e legislação 
+que protege os direitos das
+ pessoas com deficiência.
+
+❤️ Como ajudar uma pessoa com deficiência visual?
+Algumas atitudes simples fazem muita diferença.
+
+Pergunte antes de ajudar. Não puxe a pessoa pelo braço sem avisar.
+Ao se aproximar, identifique-se, principalmente se ela não souber quem está falando.
+Dê informações claras sobre o ambiente.
+Em vez de dizer apenas "ali", prefira "à sua direita" ou "aproximadamente dois 
+metros à frente".
+Não tenha medo de usar palavras como "ver" ou "olhar". Pessoas cegas também podem 
+usar essas expressões normalmente.
+Não mexa na bengala ou no cão-guia sem autorização.
+Ao oferecer um lugar, explique onde ele está em vez de simplesmente empurrar a pessoa até ele.
+⚠️ Deficiência visual é diferente de dificuldade para enxergar
+Ter miopia, hipermetropia ou astigmatismo não significa automaticamente ter deficiência
+ visual. Muitas dessas condiçõe
+ podem ser corrigidas adequadamente com óculos ou lentes.
+
+A deficiência visual envolve uma perda visual significativa que permanece ou causa 
+limitações importantes mesmo após a
+ correção/tratamento apropriado.
+
+🇧🇷 E no Brasil?
+No Brasil, a deficiência é compreendida também considerando a interação entre a condição
+ da pessoa e as barreiras
+ existentes na sociedade. Por isso, acessibilidade, educação inclusiva, trabalho, transporte
+  e participação social são partes importantes do tema.
+
+Se você estiver estudando para escola, faculdade ou trabalho, posso também explicar deficiência
+ visual em formato de trabalho completo, incluindo 
+introdução, causas, tipos, sintomas, diagnóstico, tratamento, direitos, inclusão, conclusão e
+ referências.

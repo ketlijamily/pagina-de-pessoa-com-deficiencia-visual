@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre deficiência visual, acessibilidade e tecnologia assistiva.">
+    <title>Acessibilidade Visual</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#conteudo">
+        Pular para o conteúdo principal
+    </a>
+
+    <header>
+        <div class="container">
+            <h1>Acessibilidade Visual</h1>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologia">Tecnologia Assistiva</a></li>
+                    <li><a href="#acessibilidade">Acessibilidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Um mundo mais acessível para todos</h2>
+
+                <p>
+                    A acessibilidade visual permite que pessoas com deficiência
+                    visual tenham mais autonomia, inclusão e participação na sociedade.
+                </p>
+
+                <a class="botao" href="#sobre">
+                    Saiba mais
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTROLES -->
+        <section class="controles" aria-labelledby="titulo-controles">
+            <div class="container">
+
+                <h2 id="titulo-controles">Controles de acessibilidade</h2>
+
+                <div class="botoes">
+                    <button id="aumentarFonte">
+                        Aumentar fonte
+                    </button>
+
+                    <button id="diminuirFonte">
+                        Diminuir fonte
+                    </button>
+
+                    <button id="altoContraste">
+                        Alto contraste
+                    </button>
+
+                    <button id="resetar">
+                        Restaurar padrão
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="container">
+
+                <h2>O que é deficiência visual?</h2>
+
+                <p>
+                    A deficiência visual é uma condição que pode envolver perda
+                    total ou parcial da visão. Ela pode apresentar diferentes
+                    níveis e características.
+                </p>
+
+                <p>
+                    Pessoas com deficiência visual podem utilizar diferentes
+                    estratégias e tecnologias para realizar atividades do
+                    cotidiano, estudar, trabalhar e utilizar a internet.
+                </p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Baixa visão</h3>
+                        <p>
+                            Quando a pessoa possui algum grau de visão,
+                            mas apresenta dificuldades para enxergar.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Cegueira</h3>
+                        <p>
+                            Caracteriza-se por uma ausência ou perda muito
+                            significativa da visão.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Inclusão</h3>
+                        <p>
+                            A sociedade deve oferecer condições para que
+                            todas as pessoas possam participar plenamente.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGIA -->
+        <section id="tecnologia" class="fundo">
+            <div class="container">
+
+                <h2>Tecnologia Assistiva</h2>
+
+                <p>
+                    A tecnologia assistiva reúne recursos que ajudam pessoas
+                    com deficiência a realizar atividades com maior autonomia.
+                </p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Leitores de tela</h3>
+                        <p>
+                            Programas que transformam textos e informações
+                            da tela em fala ou Braille.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Display Braille</h3>
+                        <p>
+                            Dispositivo que apresenta informações digitais
+                            utilizando caracteres em Braille.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Comandos de voz</h3>
+                        <p>
+                            Permitem controlar dispositivos e realizar
+                            determinadas tarefas utilizando a voz.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ACESSIBILIDADE -->
+        <section id="acessibilidade">
+            <div class="container">
+
+                <h2>Como tornar um site mais acessível?</h2>
+
+                <ul class="lista">
+                    <li>Utilizar textos alternativos nas imagens.</li>
+                    <li>Utilizar títulos e cabeçalhos organizados.</li>
+                    <li>Garantir bom contraste entre texto e fundo.</li>
+                    <li>Permitir navegação utilizando o teclado.</li>
+                    <li>Utilizar botões e links com nomes claros.</li>
+                    <li>Utilizar HTML semântico.</li>
+                    <li>Evitar informações transmitidas somente por cores.</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="fundo">
+            <div class="container">
+
+                <h2>Entre em contato</h2>
+
+                <form id="formulario">
+
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+                    <p id="mensagemFormulario" role="status"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                © 2026 - Acessibilidade Visual
+            </p>
+
+            <p>
+                Desenvolvido para promover inclusão e acessibilidade.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+👁️ O que é deficiência visual?
+A deficiência visual é uma condição em que uma pessoa apresenta uma redução
+ importante da capacidade de enxergar, mesmo com tratamento, correção por óculos
+  ou lentes de contato.
+
+Ela pode variar bastante: algumas pessoas enxergam parcialmente, enquanto outras 
+não possuem visão funcional.
+
+É importante entender que deficiência visual não significa necessariamente cegueira.
+
+Principais classificações
+Baixa visão: a pessoa possui alguma visão, mas tem dificuldade para realizar atividades
+ do dia a dia, mesmo usando correção adequada.
+Cegueira: a pessoa apresenta ausência ou perda muito significativa da visão funcional.
+Visão monocular: perda da visão em um dos olhos. Dependendo da legislação e da avaliação
+ funcional, pode ser considerada deficiência.
+🔎 Quais são as causas?
+A deficiência visual pode surgir desde o nascimento ou ao longo da vida.
+
+Algumas causas incluem:
+
+Alterações genéticas ou congênitas.
+Doenças da retina.
+Glaucoma.
+Catarata.
+Retinopatia diabética.
+Degeneração macular.
+Traumas ou acidentes.
+Infecções e outras doenças que afetam os olhos ou o sistema nervoso.
+A causa e o grau da deficiência determinam quanto a pessoa consegue enxergar e quais
+ recursos podem ajudá-la.
+
+🧑‍🦯 Como é a vida de uma pessoa com deficiência visual?
+Depende muito do grau de visão e das condições da pessoa. Uma pessoa com deficiência visual 
+pode estudar, trabalhar, praticar esportes, viajar, usar celular e computador, morar sozinha
+ e realizar inúmeras atividades.
+
+O que muitas vezes dificulta sua participação não é apenas a deficiência em si, mas também
+ a falta de acessibilidade.
+
+Por exemplo:
+
+Calçadas sem orientação adequada.
+Falta de sinalização tátil.
+Sites e aplicativos incompatíveis com leitores de tela.
+Materiais escolares sem versões acessíveis.
+Falta de audiodescrição.
+Preconceito e falta de informação.
+🦯 Tecnologias e recursos de acessibilidade
+Existem muitos recursos que aumentam a autonomia:
+
+Bengala branca, utilizada para orientação e mobilidade.
+Cão-guia.
+Braille, sistema de leitura e escrita por pontos em relevo.
+Leitores de tela, que transformam textos e informações da tela em voz.
+Ampliadores de tela.
+Lupas e dispositivos ópticos.
+Audiodescrição.
+Materiais em formatos acessíveis.
+Aplicativos de reconhecimento de objetos, textos e ambientes.
+🏫 Deficiência visual na escola
+Uma pessoa com deficiência visual pode estudar normalmente, mas pode precisar de adaptações.
+
+Alguns exemplos:
+
+Livros em Braille ou formato digital acessível.
+Textos ampliados para pessoas com baixa visão.
+Leitor de tela.
+Provas adaptadas.
+Descrição verbal de imagens, gráficos e mapas.
+Materiais táteis.
+Mais tempo para determinadas atividades, quando necessário.
+O objetivo da inclusão não é diminuir o conteúdo que o aluno aprende, mas garantir que ele
+ consiga acessar o conteúdo.
+
+💼 E no trabalho?
+Pessoas com deficiência visual podem exercer diversas profissões. Dependendo da atividade,
+ podem utilizar tecnologias assistivas e adaptações no ambiente.
+
+Por exemplo, uma pessoa pode utilizar:
+
+Computador com leitor de tela.
+Teclado adaptado.
+Ampliadores.
+Documentos digitais acessíveis.
+Equipamentos e sinalizações adaptadas.
+No Brasil, existem também políticas de inclusão profissional e legislação que protege 
+os direitos das pessoas com deficiência.
+
+❤️ Como ajudar uma pessoa com deficiência visual?
+Algumas atitudes simples fazem muita diferença.
+
+Pergunte antes de ajudar. Não puxe a pessoa pelo braço sem avisar.
+Ao se aproximar, identifique-se, principalmente se ela não souber quem está falando.
+Dê informações claras sobre o ambiente.
+Em vez de dizer apenas "ali", prefira "à sua direita" ou "aproximadamente dois metros à frente".
+Não tenha medo de usar palavras como "ver" ou "olhar". Pessoas cegas também podem usar essas 
+expressões normalmente.
+Não mexa na bengala ou no cão-guia sem autorização.
+Ao oferecer um lugar, explique onde ele está em vez de simplesmente empurrar a pessoa até ele.
+⚠️ Deficiência visual é diferente de dificuldade para enxergar
+Ter miopia, hipermetropia ou astigmatismo não significa automaticamente ter deficiência visual.
+ Muitas dessas condições podem ser corrigidas adequadamente com óculos ou lentes.
+
+A deficiência visual envolve uma perda visual significativa que permanece ou causa limitações
+ importantes mesmo após a correção/tratamento apropriado.
+
+🇧🇷 E no Brasil?
+No Brasil, a deficiência é compreendida também considerando a interação entre a condição da
+ pessoa e as barreiras existentes na sociedade. Por isso, acessibilidade, educação inclusiva,
+  trabalho, transporte e participação social são partes importantes do tema.
+
+Se você estiver estudando para escola, faculdade ou trabalho, posso também explicar deficiência
+ visual em formato de trabalho completo, incluindo introdução, causas, tipos, sintomas, diagnóstico,
+  tratamento, direitos, inclusão, conclusão e referências.
+
+Organização Mundial da Saúde (OMS) — informações sobre deficiência visual, cegueira, causas, prevenção,
+ tratamento e reabilitação. 
+O
+Organização Mundial da Saúde
++1
+
+OMS — Blindness and vision impairment
+
+Ministério da Saúde — Brasil — critérios e definições relacionados à deficiência visual, 
+baixa visão e cegueira. 
+B
+BVS Saúde
++1
+
+Biblioteca Virtual em Saúde — Ministério da Saúde
+
+Lei Brasileira de Inclusão (Lei nº 13.146/2015) — legislação brasileira sobre direitos,
+ inclusão e acessibilidade das pessoas com deficiência. 
+P
+Palácio do Planalto
+
+Lei Brasileira de Inclusão — Planalto
+
+INEP / Governo Federal — definição de pessoa com deficiência e informações relacionadas à 
+educação inclusiva. 
+
